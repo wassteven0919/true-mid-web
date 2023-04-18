@@ -8,7 +8,6 @@ import UserPage from "./pages/users";
 import CreateUserPage from "./pages/create-user";
 import ErrorPage from "./pages/error-page";
 import ProfilePage from "./pages/profile";
-import ChatPage from "./pages/chat";
 
 const router = createBrowserRouter([
   {
@@ -32,10 +31,6 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <ProfilePage />,
-      },
-      {
-        path: "/chat",
-        element: <ChatPage />,
       },
     ],
   },
