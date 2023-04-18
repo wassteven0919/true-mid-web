@@ -24,4 +24,3 @@ model Messages {
   messages        String   @db.VarChar(150) // Limit the length of messages to 150
   user           User   @relation(name: "UserMessages", fields: [user_id], references: [id])
 }
-
