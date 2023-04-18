@@ -1,0 +1,16 @@
+{
+  "name": "midterm-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "doraeric <benson.doraemon@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd backend && npx prisma migrate dev --name init && yarn start",
+    "build": "cd frontend && yarn build",
+    "install:all": "cd frontend && yarn install --production=false && cd ../backend && yarn",
+    "dev": "cd backend && npx prisma migrate dev --name init && yarn dev"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.12.0"
+  }
+}
